@@ -14,14 +14,15 @@ import { CarrouselComponent } from './components/carrousel/carrousel.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { FormsModule } from '@angular/forms';
-import { UsersComponent } from './components/users/users.component';
-import { PedidosComponent } from './components/pedidos/pedidos.component';
-import { BebidasComponent } from './components/content/bebidas/bebidas.component';
-import { ComidasComponent } from './components/content/comidas/comidas.component';
-import { PorcoesComponent } from './components/content/porcoes/porcoes.component';
+import { UsersComponent } from './pages/users/users.component';
+import { PedidosComponent } from './pages/pedidos/pedidos.component';
+import { BebidasComponent } from './produtos/bebidas/bebidas.component';
+import { ComidasComponent } from './produtos/comidas/comidas.component';
+import { PorcoesComponent } from './produtos/porcoes/porcoes.component';
 import { MiniHeaderComponent } from './components/mini-header/mini-header.component';
 
-import { ContentComponent } from './components/content/content.component';
+import { ContentComponent } from './pages/content/content.component';
+import { ItemPaiTesteComponent } from './components/item-pai-teste/item-pai-teste.component';
 
 
 
@@ -71,7 +72,8 @@ const routes: Routes = [
     PorcoesComponent,
     MiniHeaderComponent,
   
-    ContentComponent
+    ContentComponent,
+       ItemPaiTesteComponent
 
 
    

@@ -1,6 +1,4 @@
 import { Component, EventEmitter, Input, Output, } from '@angular/core';
-import { IBebida } from 'src/app/models/bebida.model';
-import { IComida } from 'src/app/models/comida.model';
 import { Iproduto } from 'src/app/models/produto.model';
 
 @Component({
@@ -11,7 +9,7 @@ import { Iproduto } from 'src/app/models/produto.model';
 export class ContentComponent {
   quantidade = 0;
 
-  @Input() item?: Iproduto;
+  @Input() itemADD?: Iproduto;
 
   @Output() adicionaAoPedido = new EventEmitter<Iproduto>();
 
@@ -20,18 +18,18 @@ export class ContentComponent {
   constructor() { }
 
   adicionarAoPedido() {
-    this.adicionaAoPedido.emit(this.item);
-    alert(this.item)
+    this.adicionaAoPedido.emit(this.itemADD);
+   
   }
 
   adicionarItensAoPedido() {
     const itemQuantidade = {
-      item: this.item,
-      quantidade: this.quantidade
+      item: this.itemADD,
+      quantidade: this.quantidade,      
     }
-
+    console.log(itemQuantidade);    
     this.adicionaItensAoPedido.emit(itemQuantidade);
-    alert(itemQuantidade)
+    
   }
 
   incrementarQuantidade() {

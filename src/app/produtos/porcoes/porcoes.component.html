@@ -25,14 +25,13 @@
         <h5 class="card-title">
           {{ item.nome }} -  {{ item.preco }}
         
-           <ngf-content  >
-              *ngFor="let bebida of listaBebida" 
-              [item]="bebida"
-              (adicionaAoPedido)="adicionarBebidas($event)"
-              (adicionaItensAoPedido)="adicionarBebidasComQuantidade($event)" >
-            </ngf-content>
-        </h5>
-        
+           <ngf-item-pai-teste>
+              *ngFor="let porcao of itensFiltrados"" 
+              [itemADD]="porcao"
+              (adicionaAoPedido)="adicionarPorcoes($event)"
+              (adicionaItensAoPedido)="adicionarPorcoesComQuantidade($event)" >
+           </ngf-item-pai-teste>
+        </h5>    
 
       
       </div>

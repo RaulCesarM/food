@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IBebida } from 'src/app/models/bebida.model';
-import { IComida } from 'src/app/models/comida.model';
+
 import { Iproduto } from 'src/app/models/produto.model';
 import { PedidoService } from 'src/app/services/pedido.service';
 

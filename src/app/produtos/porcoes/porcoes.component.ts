@@ -1,32 +1,31 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Iproduto } from 'src/app/models/produto.model';
-import { BuscarBebidasService } from 'src/app/services/buscar-bebidas.service';
-import { FiltrarService } from 'src/app/services/filtrar.service';
+import { BuscarPorcoesService } from 'src/app/services/buscar-porcoes.service';
 import { PedidoService } from 'src/app/services/pedido.service';
 
 @Component({
-  selector: 'ngf-bebidas',
-  templateUrl: './bebidas.component.html',
-  styleUrls: ['./bebidas.component.css']
+  selector: 'ngf-porcoes',
+  templateUrl: './porcoes.component.html',
+  styleUrls: ['./porcoes.component.css']
 })
-export class BebidasComponent implements OnInit {
-
-  public itensFiltrados: any = [];
+export class PorcoesComponent implements OnInit {
+ 
+  public itensFiltrados: Iproduto[] = [];
   public itens: any = [];
   private itensLista: string = '';
-  listaBebida: Iproduto[] = [];
+
 
 
   constructor(
-    private bebidaService: BuscarBebidasService,
+    private PorcoesServices: BuscarPorcoesService,
     private pedidoService: PedidoService
-  
+
   ) { }
 
   ngOnInit(): void {
     console.log('ngOnInit');
-    this.buscarBebidas();
+    this.buscarPorcoes();
   }
 
 
@@ -49,21 +48,22 @@ export class BebidasComponent implements OnInit {
   }
 
 
-  buscarBebidas() {
-    this.bebidaService
-      .devolverBebidas()
+  buscarPorcoes() {
+    this.PorcoesServices
+      .devolverPorcoes()
       .subscribe((resposta: Iproduto[]) => {
         this.itens = resposta;
-        this.listaBebida =resposta;
         this.itensFiltrados = this.itens;
       });
   }
 
-  adicionarBebidas(bebida: Iproduto) {
-    this.pedidoService.adicionarItemPedido(bebida);
+
+
+  adicionarPorcoes(itemADD: Iproduto) {
+    this.pedidoService.adicionarItemPedido(itemADD);
   }
 
-  adicionarBebidasComQuantidade(itemComQuantidade: any) {
+  adicionarPorcoesComQuantidade(itemComQuantidade: any) {
     this.pedidoService
       .adicionarItensPedido(itemComQuantidade.item, itemComQuantidade.quantidade);
   }

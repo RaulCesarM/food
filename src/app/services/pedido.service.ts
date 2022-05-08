@@ -5,7 +5,7 @@ import { Iproduto } from '../models/produto.model';
   providedIn: 'root'
 })
 export class PedidoService {
-  itensPedidoLista: Iproduto[]  = [];
+  itensPedidoLista: Iproduto[] =[];
 
   constructor() { }
 

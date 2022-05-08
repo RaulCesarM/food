@@ -1,31 +1,30 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Iproduto } from 'src/app/models/produto.model';
-import { BuscarPorcoesService } from 'src/app/services/buscar-porcoes.service';
+import { BuscarBebidasService } from 'src/app/services/buscar-bebidas.service';
 import { PedidoService } from 'src/app/services/pedido.service';
 
 @Component({
-  selector: 'ngf-porcoes',
-  templateUrl: './porcoes.component.html',
-  styleUrls: ['./porcoes.component.css']
+  selector: 'ngf-bebidas',
+  templateUrl: './bebidas.component.html',
+  styleUrls: ['./bebidas.component.css']
 })
-export class PorcoesComponent implements OnInit {
- 
-  public itensFiltrados: any = [];
+export class BebidasComponent implements OnInit {
+
+  public itensFiltrados: Iproduto[] = [];
   public itens: any = [];
   private itensLista: string = '';
-  listaPorcoes: Iproduto[] = [];
+ 
 
 
   constructor(
-    private PorcoesServices: BuscarPorcoesService,
+    private bebidaService: BuscarBebidasService,
     private pedidoService: PedidoService
-
+  
   ) { }
 
   ngOnInit(): void {
-    console.log('ngOnInit');
-    this.buscarPorcoes();
+      this.buscarBebidas();
   }
 
 
@@ -48,23 +47,20 @@ export class PorcoesComponent implements OnInit {
   }
 
 
-  buscarPorcoes() {
-    this.PorcoesServices
-      .devolverPorcoes()
+  buscarBebidas() {
+    this.bebidaService
+      .devolverBebidas()
       .subscribe((resposta: Iproduto[]) => {
         this.itens = resposta;
-        this.listaPorcoes =this.itens;
-        this.itensFiltrados = this.itens;
+         this.itensFiltrados = this.itens;
       });
   }
 
-
-
-  adicionarPorcoes(porcoes: Iproduto) {
-    this.pedidoService.adicionarItemPedido(porcoes);
+  adicionarBebidas(bebida: Iproduto) {
+    this.pedidoService.adicionarItemPedido(bebida);
   }
 
-  adicionarPorcoesComQuantidade(itemComQuantidade: any) {
+  adicionarBebidasComQuantidade(itemComQuantidade: any) {
     this.pedidoService
       .adicionarItensPedido(itemComQuantidade.item, itemComQuantidade.quantidade);
   }

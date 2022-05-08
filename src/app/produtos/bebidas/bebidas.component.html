@@ -26,12 +26,13 @@
           {{ item.nome }} -  {{ item.preco }}
         
            <ngf-content  >
-              *ngFor="let porcoes of listaPorcoes"
-              [item]="porcoes"
-              (adicionaAoPedido)="adicionarPorcoes($event)"
-              (adicionaItensAoPedido)="adicionarPorcoesComQuantidade($event)" >
+              *ngFor="let bebida of itensFiltrados" 
+              [itemADD]="bebida"
+              (adicionaAoPedido)="adicionarBebidas($event)"
+              (adicionaItensAoPedido)="adicionarBebidasComQuantidade($event)" >
             </ngf-content>
-        </h5>    
+        </h5>
+        
 
       
       </div>

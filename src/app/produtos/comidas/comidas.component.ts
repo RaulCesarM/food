@@ -11,11 +11,11 @@ import { PedidoService } from 'src/app/services/pedido.service';
   styleUrls: ['./comidas.component.css']
 })
 export class ComidasComponent implements OnInit {
-  public itensFiltrados: any = [];
+  public itensFiltrados: Iproduto[] = [];
   public itens: any = [];
   public itensLista: string = ''; 
 
-  listaComida: Iproduto[] = [];
+ 
 
 
   constructor(
@@ -53,7 +53,6 @@ export class ComidasComponent implements OnInit {
       .devolverComidas()
       .subscribe((resposta: Iproduto[]) => {
         this.itens = resposta;
-        this.listaComida =resposta;
         this.itensFiltrados = this.itens;
       });
   }

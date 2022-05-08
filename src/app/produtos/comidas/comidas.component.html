@@ -25,9 +25,9 @@
         <h5 class="card-title">
           {{ item.nome }} -  {{ item.preco }}
         
-           <ngf-content  >
-              *ngFor="let comida of listaComida"
-               [item]="comida"
+           <ngf-content  [itemADD]="item" >
+              
+              
               (adicionaAoPedido)="adicionarComida($event)"
               (adicionaItensAoPedido)="adicionarComidaComQuantidade($event)" >
             </ngf-content>
