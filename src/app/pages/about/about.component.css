@@ -1,0 +1,24 @@
+import
+.container{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background-color: rgb(141, 218, 218);
+    align-content: center;
+}
+.container h1{
+    text-align: center;
+    color: #fff;
+    font-size: 80px;
+    font-weight: strong;
+    margin-top: 20px;
+    font-family: 'MonteCarlo',  cursive;
+}
+.container p{
+    text-align: center;
+    color: #fff;
+    font-size: 80px;
+    font-weight: strong;
+    margin-top: 20px;
+    font-family: 'MonteCarlo',
+    cursive;
+}

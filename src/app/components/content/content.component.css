@@ -1,0 +1,65 @@
+.container{
+    margin-top: 50px;    
+    background-color: rgb(67, 156, 179);
+   
+    
+
+}
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(67, 156, 179);
+}
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+    font-family: Snell Roundhand, cursive;
+}
+h5{
+    color: white;
+    text-align: center;
+    margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 0;
+        margin-right: 0;
+}
+p {
+    color: white;
+    text-align: center;
+    margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 0;
+        margin-right: 0;
+}
+h2 {
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: medium;
+}
+.qtdup{
+    color: white;
+    text-align: top;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: larger;
+}
+.qtdown{
+    color: white;
+    text-align: bottom;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 0;
+        margin-right: 0;
+    font-size: larger;
+}
+src{
+    margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 0;
+        margin-right: 0;
+}

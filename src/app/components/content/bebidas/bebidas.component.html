@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="form-inline bg-info">
+    <div class="form-group mb-1 mt-1 bg-info">
+      <ngf-mini-header></ngf-mini-header>
+      <input
+        [(ngModel)]="FiltroLista"
+        type="text"
+        class="form-control mb-1"
+        style="max-width: 50%; margin-left: 25%; margin-top: 2rem"
+        placeholder="Pesquisar"
+      />
+    </div>
+  </div>
+  <div class="col-md-3 mx-auto bg-info" *ngFor="let item of itensFiltrados">
+    <div class="card border-0 bg-info" style="width: 15rem">
+      
+      <img
+        src="{{ item.imagem }}"
+        class="card-img-top rounded-circle"
+        width="250px"
+        height="250px"
+      />    
+
+      <div class="card-body">       
+        <h5 class="card-title">
+          {{ item.nome }} -  {{ item.preco }}
+        
+           <ngf-content  >
+              *ngFor="let bebida of listaBebida" 
+              [item]="bebida"
+              (adicionaAoPedido)="adicionarBebidas($event)"
+              (adicionaItensAoPedido)="adicionarBebidasComQuantidade($event)" >
+            </ngf-content>
+        </h5>
+        
+
+      
+      </div>
+    </div>
+  </div>
+</div>

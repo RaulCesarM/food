@@ -1,0 +1,45 @@
+.container {
+    margin-top: 50px;
+    background-color: rgb(67, 156, 179);
+}
+
+.card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(67, 156, 179);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+    font-family: Snell Roundhand, cursive;
+}
+
+h5 {
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+}
+
+p {
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: medium;
+}
+
+.navbar-container .item-nav {
+    color: white;
+}
+
+.navbar-container .item-nav.active {
+    color: black;
+}

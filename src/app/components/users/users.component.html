@@ -1,0 +1,86 @@
+<div class="container bg-info">
+  <div class="row">
+    <h1>Usuario</h1>
+    <form [formGroup]="formUsuario" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="nome"
+          name="nome"
+          style="max-width: 50%; margin-left: 25%; margin-top: 1rem"
+          id="nome"
+          placeholder="Nome"
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="usuario"
+          name="usuario"
+          style="max-width: 50%; margin-left: 25%; margin-top: 1rem"
+          id="usuario"
+          placeholder="Usuario"
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="endereco"
+          name="endereco"
+          style="max-width: 50%; margin-left: 25%; margin-top: 1rem"
+          id="endereco"
+          placeholder="Endereco"
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="telefone"
+          name="telefone"
+          style="max-width: 50%; margin-left: 25%; margin-top: 1rem"
+          id="telefone"
+          placeholder="Telefone"
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="cidade"
+          name="cidade"
+          style="max-width: 50%; margin-left: 25%; margin-top: 1rem"
+          id="cidade"
+          placeholder="Cidade"
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="email"
+          name="email"
+          style="max-width: 50%; margin-left: 25%; margin-top: 1rem"
+          id="email"
+          placeholder="Email"
+        />
+      </div>
+
+      <input
+        type="submit"
+        class="btn btn-primary mt-4"
+        style="max-width: 50%; margin-left: 25%; margin-top: 1rem"
+        value="Salvar"
+      />
+      <a href="#" class="btn btn-secondary mt-4 ml-2">Cancelar</a>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,129 @@
+{ 
+  "comidas": [
+    {
+      "id": 1,
+      "categoria": "lanche",
+      "nome": "X-SALADA",
+      "descricao": "Lanches",
+      "preco": "R$ 13,00",
+      "imagem": "assets/X-SALADA.jpg"
+    },
+    {
+      "id": 2,
+      "categoria": "lanche",
+      "nome": "X-TUDO",
+      "descricao": "Lanches",
+      "preco": "R$ 13,00",
+      "imagem": "assets/X-TUDO.jpg"
+    },
+    {
+      "id": 3,
+      "categoria": "lanche",
+      "nome": "X-BACON",
+      "descricao": "Lanches",
+      "preco": "R$ 13,00",
+      "imagem": "assets/X-BACON.jpg"
+    },
+    {
+      "id": 4,
+      "categoria": "lanche",
+      "nome": "X-EGG",
+      "descricao": "Lanches",
+      "preco": "R$ 13,00",
+      "imagem": "assets/X-EGG.jpg"
+    }
+  ],
+  "porcoes": [
+    {
+      "id": 5,
+      "categoria": "porcao",
+      "nome": "Porção de alcatra",
+      "descricao": "Porções Quentes",
+      "preco": "R$ 35,00",
+      "imagem": "assets/PORCAO-ALCATRA.jpg"
+    },
+    {
+      "id": 6,
+      "categoria": "porcao",
+      "nome": "Porção de calabresa",
+      "descricao": "Porções Quentes",
+      "preco": "R$ 30,00",
+      "imagem": "assets/PORCAO-CALABRESA.jpg"
+    },
+    {
+      "id": 7,
+      "categoria": "porcao",
+      "nome": "Porção de coração",
+      "descricao": "Porções Quentes",
+      "preco": "R$ 30,00",
+      "imagem": "assets/PORCAO-CORACAOSINHO.jpg"
+    },
+    {
+      "id": 8,
+      "categoria": "porcao",
+      "nome": "Porção de tilapia",
+      "descricao": "Porções Quentes",
+      "preco": "R$ 30,00",
+      "imagem": "assets/PORCAO-TILAPIA.jpg"
+    }
+  ],
+  "bebidas": [
+    {
+      "id": 9,
+      "categoria": "bebidas",
+      "nome": "Coca-Cola",
+      "descricao": "Refrigerante",
+      "preco": "R$ 3,00",
+      "imagem": "assets/BEBIDA-COCA-COLA.jpg"
+    },
+    {
+      "id": 10,
+      "categoria": "bebidas",
+      "nome": "Guaraná",
+      "descricao": "Refrigerante",
+      "preco": "R$ 3,00",
+      "imagem": "assets/BEBIDA-GUARANA.png"
+    },
+    {
+      "id": 11,
+      "categoria": "bebidas",
+      "nome": "FANTA",
+      "descricao": "Refrigerante",
+      "preco": "R$ 3,00",
+      "imagem": "assets/BEBIDA-FANTA.jpg"
+    },
+    {
+      "id": 12,
+      "categoria": "bebidas",
+      "nome": "SPRIT",
+      "descricao": "Refrigerante",
+      "preco": "R$ 3,00",
+      "imagem": "assets/BEBIDA-SPRIT.jpg"
+    }
+  ],
+  "users": [
+    {
+      "nome": "Raul ",
+      "usuario": "rcm",
+      "endereco": "garibaldi",
+      "telefone": "(47)9999999",
+      "cidade": "jaragua do sul",
+      "email": "teste@teste",
+      "categoria": "User",
+      "id": 1
+    },
+    {
+      "nome": "TESTE",
+      "usuario": "TESTE",
+      "endereco": "TESTE",
+      "telefone": "TESTE",
+      "cidade": "TESTE",
+      "email": "TESTE",
+      "categoria": "User",
+      "id": 2
+    }
+  ],
+  "pedidos": [
+    
+  ]
+}
